@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Child Management</title>
+    <script src="child.js"></script>
+</head>
+<body onload="fetchChildren()">
+    <h1>Child Management</h1>
+    <form id="childForm">
+        <label for="firstname">First Name:</label><br>
+        <input type="text" id="firstname" name="firstname"><br>
+        <label for="lastname">Last Name:</label><br>
+        <input type="text" id="lastname" name="lastname"><br>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br>
+        <label for="room_id">Classroom ID:</label><br>
+        <input type="number" id="room_id" name="room_id"><br><br>
+        <input type="submit" value="Add Child">
+    </form>
+    <div>
+        <h2>Existing Children</h2>
+        <table id="childrenTable">
+            <!-- Dynamic table rows populated via JavaScript -->
+        </table>
+    </div>
+</body>
+</html>

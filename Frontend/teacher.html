@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Teacher Management</title>
+    <script src="teacher.js"></script>
+</head>
+<body onload="fetchTeachers()">
+    <h1>Teacher Management</h1>
+    <form id="teacherForm">
+        <label for="firstname">First Name:</label><br>
+        <input type="text" id="firstname" name="firstname"><br>
+        <label for="lastname">Last Name:</label><br>
+        <input type="text" id="lastname" name="lastname"><br>
+        <label for="room_id">Classroom ID:</label><br>
+        <input type="number" id="room_id" name="room_id"><br><br>
+        <input type="submit" value="Add Teacher">
+    </form>
+    <div>
+        <h2>Existing Teachers</h2>
+        <table id="teachersTable">
+            <!-- Dynamic table rows populated via JavaScript -->
+        </table>
+    </div>
+</body>
+</html>

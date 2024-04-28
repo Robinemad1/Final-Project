@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Facility Management</title>
+</head>
+<body onload="fetchFacility()">
+<h1>Facility Management</h1>
+<form id="facilityForm" action="/api/facilities" method="post">
+<form id="facilityForm" action="/api/facilities" method="post">
+    <label for="name">Facility Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+    <input type="submit" value="Add Facility">
+</form>
+<div>
+    <h2>Existing Facilities</h2>
+    <table id="facilitiesTable">
+        <!-- Dynamic table rows populated via JavaScript -->
+    </table>
+</div>
+</body>
+<script src="facilities.js"></script>
+</html>
+

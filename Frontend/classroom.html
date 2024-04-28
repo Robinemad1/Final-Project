@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Classroom Management</title>
+    <script src="classroom.js"></script>
+</head>
+<body onload="fetchClassrooms()">
+    <h1>Classroom Management</h1>
+    <form id="classroomForm">
+        <label for="name">Classroom Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="capacity">Capacity:</label><br>
+        <input type="number" id="capacity" name="capacity"><br>
+        <label for="facility_id">Facility ID:</label><br>
+        <input type="number" id="facility_id" name="facility_id"><br><br>
+        <input type="submit" value="Add Classroom">
+    </form>
+    <div>
+        <h2>Existing Classrooms</h2>
+        <table id="classroomsTable">
+            <!-- Dynamic table rows populated via JavaScript -->
+        </table>
+    </div>
+</body>
+</html>
